@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Testes - Layout Simples</title>
+    <style>
+      /* Variáveis de Cores */
+      :root {
+        --cor-fundo: #f4f4f4; /* Off-White/Branco Suave */
+        --cor-principal: #333333; /* Grafite Escuro */
+        --cor-secundaria: #555555; /* Grafite Médio */
+      }
+
+      /* Estilos Básicos e Responsividade */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: var(--cor-fundo);
+        color: var(--cor-principal);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        min-height: 100vh; /* Garante que o fundo ocupe toda a tela */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Alinha o conteúdo ao topo */
+        padding-top: 50px;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 800px;
+        padding: 25px;
+        background-color: white; /* Conteúdo interno pode ser branco puro para contraste */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      /* Títulos */
+      h1 {
+        color: var(--cor-principal);
+        font-size: 2.5em;
+        margin-bottom: 0.1em;
+        border-bottom: 3px solid var(--cor-secundaria);
+        padding-bottom: 10px;
+      }
+
+      h2 {
+        color: var(--cor-secundaria);
+        font-size: 1.5em;
+        margin-top: 0;
+        font-weight: normal;
+      }
+
+      /* Texto de Explicação */
+      p {
+        font-size: 1.1em;
+        color: var(--cor-secundaria);
+        margin-top: 20px;
+      }
+
+      /* Media Queries para Responsividade */
+      @media (max-width: 600px) {
+        body {
+          padding-top: 20px;
+        }
+        .container {
+          padding: 15px;
+          width: 95%;
+        }
+        h1 {
+          font-size: 1.8em;
+          padding-bottom: 5px;
+        }
+        h2 {
+          font-size: 1.2em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Página de Testes (Layout Principal)</h1>
+      <h2>Configuração Visual Simples e Responsiva</h2>
+
+      <p>
+        Esta página foi criada especificamente para atuar como um *template* de
+        teste. Ela utiliza uma paleta de cores neutra e moderna, com **grafite**
+        (#333) e **off-white** (#F4F4F4), ideal para testar estilos, fontes e a
+        responsividade em diferentes dispositivos.
+      </p>
+      <p>
+        O layout é centrado e o conteúdo se adapta automaticamente à largura da
+        tela. Você pode começar a adicionar seus elementos e funcionalidades de
+        teste (como formulários, scripts JavaScript, ou mesmo a área de cookies
+        que você mencionou) diretamente no `div.container` sem se preocupar com
+        o design base.
+      </p>
+
+      <hr style="border-color: var(--cor-fundo)" />
+      <p style="text-align: center; color: var(--cor-secundaria)">
+        **&lt;-- Seus Componentes de Teste Começam Aqui --&gt;**
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      var lg = (navigator.language || navigator.userLanguage || "pt").split(
+        "-"
+      )[0];
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href =
+        "https://uat.privacytools.co/public_api/banner/" +
+        lg +
+        "/style/Aypl217151.css?t=1";
+      document.body.appendChild(link);
+      var script = document.createElement("script");
+      script.src =
+        "https://uat.privacytools.co/public_api/banner/" +
+        lg +
+        "/script/bottom/Aypl217151.js?t=1";
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
