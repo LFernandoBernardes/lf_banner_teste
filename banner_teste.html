@@ -1,129 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Testes - Layout Simples - Teste</title>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente de Teste de Software</title>
+
+    <!-- AUTOBLOCK COOKIES - V3 -->
+    <!-- <script src='https://uat.privacytools.co/public_api/banner/autoblock/v3/G0ny217151.js?t=1'></script> -->
+
     <style>
-      /* Variáveis de Cores */
-      :root {
-        --cor-fundo: #f4f4f4; /* Off-White/Branco Suave */
-        --cor-principal: #333333; /* Grafite Escuro */
-        --cor-secundaria: #555555; /* Grafite Médio */
-      }
-
-      /* Estilos Básicos e Responsividade */
-      body {
-        font-family: "Arial", sans-serif;
-        background-color: var(--cor-fundo);
-        color: var(--cor-principal);
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        min-height: 100vh; /* Garante que o fundo ocupe toda a tela */
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; /* Alinha o conteúdo ao topo */
-        padding-top: 50px;
-      }
-
-      .container {
-        width: 90%;
-        max-width: 800px;
-        padding: 25px;
-        background-color: white; /* Conteúdo interno pode ser branco puro para contraste */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        transition: all 0.3s ease;
-      }
-
-      /* Títulos */
-      h1 {
-        color: var(--cor-principal);
-        font-size: 2.5em;
-        margin-bottom: 0.1em;
-        border-bottom: 3px solid var(--cor-secundaria);
-        padding-bottom: 10px;
-      }
-
-      h2 {
-        color: var(--cor-secundaria);
-        font-size: 1.5em;
-        margin-top: 0;
-        font-weight: normal;
-      }
-
-      /* Texto de Explicação */
-      p {
-        font-size: 1.1em;
-        color: var(--cor-secundaria);
-        margin-top: 20px;
-      }
-
-      /* Media Queries para Responsividade */
-      @media (max-width: 600px) {
+        /* Paleta de Cores: Azul Claro e Neutros */
         body {
-          padding-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e59ae6; /* Azul bem claro */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
+
         .container {
-          padding: 15px;
-          width: 95%;
+            background-color: #b52929;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.658);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
         }
+
         h1 {
-          font-size: 1.8em;
-          padding-bottom: 5px;
+            color: #ffffff; /* Azul mais forte para destaque */
+            margin-bottom: 10px;
         }
+
         h2 {
-          font-size: 1.2em;
+            color: #ffffff; /* Azul médio */
+            font-weight: 400;
+            margin-bottom: 20px;
         }
+
         p {
-          font-size: 1em;
+            line-height: 1.6;
+            color: #ffffff;
+            margin-bottom: 30px;
         }
-      }
+
+        .btn {
+            display: inline-block;
+            background-color: #e59ae6;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #a7abad;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+
     <div class="container">
-      <h1>Página de Testes (Layout Principal)</h1>
-      <h2>Configuração Visual Simples e Responsiva</h2>
+        <h1>Portal de QA</h1>
+        <h2>Validação de Interface</h2>
+        
+        <p>Esta é uma página de <strong>teste de software</strong>.</p>
 
-      <p>
-        Esta página foi criada especificamente para atuar como um *template* de
-        teste. Ela utiliza uma paleta de cores neutra e moderna, com **grafite**
-        (#333) e **off-white** (#F4F4F4), ideal para testar estilos, fontes e a
-        responsividade em diferentes dispositivos.
-      </p>
-      <p>
-        O layout é centrado e o conteúdo se adapta automaticamente à largura da
-        tela. Você pode começar a adicionar seus elementos e funcionalidades de
-        teste (como formulários, scripts JavaScript, ou mesmo a área de cookies
-        que você mencionou) diretamente no `div.container` sem se preocupar com
-        o design base.
-      </p>
+        <h2>Bannes</h2>
+        <p>Banner Português - Coleta por Grupos</p>
+        <p>Banner Inglês - Coleta por Cookies</p>
+        <p>Banner Espanhol - Coleta por Grupos, com as categorias diversificadas</p>
 
-      <hr style="border-color: var(--cor-fundo)" />
-      <p style="text-align: center; color: var(--cor-secundaria)">
-        **&lt;-- Seus Componentes de Teste Começam Aqui --&gt;**
-      </p>
+        <h3>Categorias</h3>
+        <p>Obrigatório - sempre ativo || Preferancias - desejado || Estatistica e Marketing - opcional</p>
+
+
+        <a href="#formulario" class="btn" id="link-form">Botão inútil</a>
     </div>
 
-    <script type="text/javascript">
-      var lg = (navigator.language || navigator.userLanguage || "pt").split(
-        "-"
-      )[0];
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href =
-        "https://uat.privacytools.co/public_api/banner/" +
-        lg +
-        "/style/Aypl217151.css?t=1";
-      document.body.appendChild(link);
-      var script = document.createElement("script");
-      script.src =
-        "https://uat.privacytools.co/public_api/banner/" +
-        lg +
-        "/script/bottom/Aypl217151.js?t=1";
-      document.body.appendChild(script);
+    <div id="formulario" style="display:none;">
+        </div>
+        
+    <!-- COOKIES -->
+    <!-- <script>
+        // --- GRUPO: OBRIGATÓRIOS (Essenciais para o funcionamento) ---
+        // Identifica a sessão única do usuário no servidor para manter login/navegação
+        document.cookie = "PHPSESSID=s28888b90198f70001; path=/"; 
+        // Armazena se o usuário já aceitou o aviso de cookies (LGPD/GDPR)
+        document.cookie = "cookie_consent=true; path=/";
+        // Token de segurança para evitar ataques do tipo Cross-Site Request Forgery
+        document.cookie = "csrftoken=u32t4o3b3ceu4t23301; path=/";
+
+        // --- GRUPO: PREFERÊNCIAS (Personalização da interface) ---
+        // Define o idioma em que o conteúdo deve ser exibido para o usuário
+        document.cookie = "user_lang=pt-BR; path=/";
+        // Salva a escolha visual do usuário (claro ou escuro)
+        document.cookie = "display_mode=dark; path=/";
+        // Lembra o ajuste de acessibilidade do tamanho da fonte
+        document.cookie = "font_size=medium; path=/";
+
+        // --- GRUPO: ESTATÍSTICAS (Dados de performance e uso) ---
+        // Registra a última data de acesso para cálculo de usuários recorrentes
+        document.cookie = "last_visit=2025-12-17; path=/";
+        // Contador simples de quantas páginas o usuário viu nesta sessão
+        document.cookie = "page_views=15; path=/";
+        // Armazena quantas vezes este navegador já iniciou uma sessão no site
+        document.cookie = "session_count=3; path=/";
+
+        // --- GRUPO: MARKETING (Rastreamento e GTM) ---
+        // ID principal do Google Analytics para distinguir usuários únicos (Padrão GTM)
+        document.cookie = "_ga=GA1.1.1667559680.1667559990; path=/";
+        // ID de sessão do Google Analytics (expira em 24h, usado para jornada do usuário)
+        document.cookie = "_gid=GA1.1.9988776655.443322; path=/";
+        // Armazena dados de cliques em anúncios do Google Ads para medir conversão
+        document.cookie = "_gac_UA-12345-1=1.1667559990; path=/";
+
+    // BANNER DE COOKIES - MULTI-IDIOMA
+    </script> -->
+
+    <script >
+        document.cookie = "ai_session=lBtNXQeIoE/WnhZWmQJT1s|1667559680010|1667559990610; expires=Thu, 01 Jan 2030z 00:00:00 GMT;"
+        document.cookie = "ai_user=ererdasdasda; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "_fbp=valor1; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "147lpo=valor23; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "IDE=valor2; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "hstpconfig=valor3; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "_ga_FEJSGK8067=GS1.1.1667571197.1.0.1667571197.0.0.0; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "lang=v=2&lang=pt-br; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
+        document.cookie = "FIFA_@98=12365; expires=Thu, 01 Jan 2030 00:00:00 GMT;"
     </script>
-  </body>
+
+<link rel="stylesheet" href="https://uat.privacytools.co/public_api/banner/style/Aypl217151.css?t=1"></link>
+<script type="text/javascript" src="https://uat.privacytools.co/public_api/banner/script/bottom/Aypl217151.js?t=1"></script>
+
+</body>
 </html>
