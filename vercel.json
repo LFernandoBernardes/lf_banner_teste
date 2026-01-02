@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/LF_BANNER_TESTE/banner_teste.html" }
+    ]
+  }
